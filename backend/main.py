@@ -7,7 +7,9 @@ import uvicorn
 app = FastAPI()
 
 origins = [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://email-generator-teal.vercel.app/",
+    "https://email-generator-teal.vercel.app"
 ]
 
 app.add_middleware(
