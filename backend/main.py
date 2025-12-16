@@ -2,7 +2,7 @@ from llm_utils import llm, llm_chain
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-
+import uvicorn
 
 app = FastAPI()
 
@@ -44,3 +44,5 @@ async def generate_email(request:emailRequest):
 
     return response
 
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
