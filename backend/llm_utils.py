@@ -32,6 +32,6 @@ Please provide the content as a json output in the following format
 
 llm_chain = email_generation_prompt | llm | JsonOutputParser()
 
-result = llm_chain.invoke({"toEmail":"ronithdhanesh@gmail.com","detail":"asking when is he free for a coffee", "tone":"informal"})
+# result = llm_chain.invoke({"toEmail":"ronithdhanesh@gmail.com","detail":"asking when is he free for a coffee", "tone":"informal"})
 
-print(result)
+# print(result)
